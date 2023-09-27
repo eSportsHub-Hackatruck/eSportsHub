@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "nickJogador": "s1mple",
+        "nameJogador": "Oleksandr Kostyliev",
+        "countryJogador": "Ukraine",
+        "countryPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156299444699013200/uk.png?ex=65147746&is=651325c6&hm=967a7d75506509f78ddad395cee4cf30b432b013bac77000987889a70c5476a1&",
+        "birthdayJogador": "October 2, 1997",
+        "photoJogador": "https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=contain%2Cheight=240%2Cq=99%2Csharpen=1%2Cwidth=240/wp-content/uploads/s1mple.png",
+        "teamJogador": "Natus Vincere",
+        "teamPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156300026075680910/natus-vincere.png?ex=651477d1&is=65132651&hm=56c44fbad0d288daf202f1e25fa388d33dee187349da631f7112225ec81c308d&"
+    },
+    {
+        "id": 2,
+        "nickJogador": "NiKo",
+        "nameJogador": "Nikola Kovač",
+        "countryJogador": "Bosnia & Herzegovina",
+        "countryPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156301198878593135/ba.png?ex=651478e8&is=65132768&hm=94a7b55d2a5f9bd321b9322dc08f3b6f3a393e449426b0cca35d9437863d765a&",
+        "birthdayJogador": "February 16, 1997",
+        "photoJogador": "https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=contain%2Cheight=240%2Cq=99%2Csharpen=1%2Cwidth=240/wp-content/uploads/niko.png",
+        "teamJogador": "G2 Esports",
+        "teamPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156301823204925480/g2-esports.png?ex=6514797d&is=651327fd&hm=9f183cdc606e3907154c656b9c145ab4104f7bbee04dd9ec352186df7f34082d&"
+    },
+    {
+        "id": 3,
+        "nickJogador": "m0NESY",
+        "nameJogador": "Ilya Osipov",
+        "countryJogador": "Russia",
+        "countryPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156302210003636386/ru.png?ex=651479d9&is=65132859&hm=4336d1b52ea7ecc34d7b064fb8663607780f0a687ba82f9ff0dbca9263ce9139&",
+        "birthdayJogador": "May 1, 2005",
+        "photoJogador": "https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=contain%2Cheight=240%2Cq=99%2Csharpen=1%2Cwidth=240/wp-content/uploads/m0nesy.png",
+        "teamJogador": "G2 Esports",
+        "teamPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156301823204925480/g2-esports.png?ex=6514797d&is=651327fd&hm=9f183cdc606e3907154c656b9c145ab4104f7bbee04dd9ec352186df7f34082d&"
+    },
+    {
+        "id": 4,
+        "nickJogador": "TenZ",
+        "nameJogador": "Tyson Ngo",
+        "countryJogador": "Canada",
+        "countryPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156302901384323082/ca.png?ex=65147a7e&is=651328fe&hm=f220b540e8e7259ff47bc7655637ce0a19d766640beb216b8a63a9463457bd27&",
+        "birthdayJogador": "May 5, 2001",
+        "photoJogador": "https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=contain%2Cheight=240%2Cq=99%2Csharpen=1%2Cwidth=240/wp-content/uploads/tenz.png",
+        "teamJogador": "Sentinels",
+        "teamPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156303687635972245/sentinels.png?ex=65147b3a&is=651329ba&hm=191ff5f16f3d2df5bd66230ff07d507c4fd12d3d97c230eb56b8d882e696a4b4&"
+    },
+    {
+        "id": 5,
+        "nickJogador": "b1t",
+        "nameJogador": "Valerii Vakhovskyi",
+        "countryJogador": "Valerii Vakhovskyi",
+        "countryPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156299444699013200/uk.png?ex=65147746&is=651325c6&hm=967a7d75506509f78ddad395cee4cf30b432b013bac77000987889a70c5476a1&",
+        "birthdayJogador": "January 5, 2003",
+        "photoJogador": "https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=contain%2Cheight=240%2Cq=99%2Csharpen=1%2Cwidth=240/wp-content/uploads/b1t.png",
+        "teamJogador": "Natus Vincere",
+        "teamPhotoJogador": "https://cdn.discordapp.com/attachments/1152325417483649078/1156300026075680910/natus-vincere.png?ex=651477d1&is=65132651&hm=56c44fbad0d288daf202f1e25fa388d33dee187349da631f7112225ec81c308d&"
+    }
+]

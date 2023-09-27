@@ -1,0 +1,853 @@
+[
+    {
+        "id": "442f68ed1ee7d405",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cb0e9bfe7cf5fe72",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubJogadorPOST",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "382ff0cd8998a470"
+            ]
+        ]
+    },
+    {
+        "id": "d624c8c5b25d55e1",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "8a8e05572318cfaa",
+        "type": "cloudantplus out",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubjogadordb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "d624c8c5b25d55e1",
+                "a32a7f3204e738db"
+            ]
+        ]
+    },
+    {
+        "id": "a32a7f3204e738db",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6d4b1612afedf324",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "955b5860100962a8",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "9158fcb4d7f16c5c",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubJogadorREAD",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "22a235e8495ca9c3"
+            ]
+        ]
+    },
+    {
+        "id": "22a235e8495ca9c3",
+        "type": "cloudantplus in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubjogadordb",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 500,
+        "y": 460,
+        "wires": [
+            [
+                "6d4b1612afedf324",
+                "955b5860100962a8"
+            ]
+        ]
+    },
+    {
+        "id": "ab64ec9cbfbd5c4b",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "668ccc00edc72291",
+        "type": "cloudantplus out",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubjogadordb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 500,
+        "y": 580,
+        "wires": [
+            [
+                "ab64ec9cbfbd5c4b",
+                "276a56e12a8c7f02"
+            ]
+        ]
+    },
+    {
+        "id": "276a56e12a8c7f02",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ca612228e5cc8f83",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubJogadorDELETE",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "668ccc00edc72291"
+            ]
+        ]
+    },
+    {
+        "id": "382ff0cd8998a470",
+        "type": "split",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 330,
+        "y": 340,
+        "wires": [
+            [
+                "8a8e05572318cfaa"
+            ]
+        ]
+    },
+    {
+        "id": "2a8118af71b901be",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubJogosPOST",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 760,
+        "wires": [
+            [
+                "bb8ac8cefce18d44"
+            ]
+        ]
+    },
+    {
+        "id": "23511c6d0d355baf",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "811f8604493d9659",
+        "type": "cloudantplus out",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubjogosdb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 490,
+        "y": 760,
+        "wires": [
+            [
+                "23511c6d0d355baf",
+                "623db148bc098ad7"
+            ]
+        ]
+    },
+    {
+        "id": "623db148bc098ad7",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "fe5fcc9fbb6da509",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "24661ac281b629f8",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "4b53e9af1540aa00",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubJogosREAD",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 880,
+        "wires": [
+            [
+                "76e1db6b8825bc8a"
+            ]
+        ]
+    },
+    {
+        "id": "76e1db6b8825bc8a",
+        "type": "cloudantplus in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubjogosdb",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 490,
+        "y": 880,
+        "wires": [
+            [
+                "fe5fcc9fbb6da509",
+                "24661ac281b629f8"
+            ]
+        ]
+    },
+    {
+        "id": "115c0cd15d9fc5f8",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "70bdae292a5c9970",
+        "type": "cloudantplus out",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubjogosdb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 490,
+        "y": 1000,
+        "wires": [
+            [
+                "115c0cd15d9fc5f8",
+                "4f38f2b8fed82d51"
+            ]
+        ]
+    },
+    {
+        "id": "4f38f2b8fed82d51",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "0d3d5548091cd6e9",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubJogosDELETE",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 1000,
+        "wires": [
+            [
+                "70bdae292a5c9970"
+            ]
+        ]
+    },
+    {
+        "id": "bb8ac8cefce18d44",
+        "type": "split",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "811f8604493d9659"
+            ]
+        ]
+    },
+    {
+        "id": "bbece996bc15323d",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubTimesPOST",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 1120,
+        "wires": [
+            [
+                "725b2cd839d42fd9"
+            ]
+        ]
+    },
+    {
+        "id": "717a6e8415528e70",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "1fbb8db89089b4a1",
+        "type": "cloudantplus out",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubtimesdb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 490,
+        "y": 1120,
+        "wires": [
+            [
+                "717a6e8415528e70",
+                "d0da8cedd3676939"
+            ]
+        ]
+    },
+    {
+        "id": "d0da8cedd3676939",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "20f3e0a1714c233f",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "d83491406f3fa5c8",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "1edcfb8bb760c388",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubTimesREAD",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 1240,
+        "wires": [
+            [
+                "3116f4242c302b4e"
+            ]
+        ]
+    },
+    {
+        "id": "3116f4242c302b4e",
+        "type": "cloudantplus in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubtimesdb",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 490,
+        "y": 1240,
+        "wires": [
+            [
+                "20f3e0a1714c233f",
+                "d83491406f3fa5c8"
+            ]
+        ]
+    },
+    {
+        "id": "b117b8882ea00bf3",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "a05cf92d4ea0b97f",
+        "type": "cloudantplus out",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubtimesdb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 490,
+        "y": 1360,
+        "wires": [
+            [
+                "b117b8882ea00bf3",
+                "de2535064f1139d6"
+            ]
+        ]
+    },
+    {
+        "id": "de2535064f1139d6",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "d4766e9984028048",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubTimesDELETE",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 1360,
+        "wires": [
+            [
+                "a05cf92d4ea0b97f"
+            ]
+        ]
+    },
+    {
+        "id": "725b2cd839d42fd9",
+        "type": "split",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 330,
+        "y": 1120,
+        "wires": [
+            [
+                "1fbb8db89089b4a1"
+            ]
+        ]
+    },
+    {
+        "id": "87510880b77b8eed",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubTorneiosPOST",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1480,
+        "wires": [
+            [
+                "fdd0afd85703dabc"
+            ]
+        ]
+    },
+    {
+        "id": "1854e38306bb3f47",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "cc7d6c7b0a79f14f",
+        "type": "cloudantplus out",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubtorneiosdb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 500,
+        "y": 1480,
+        "wires": [
+            [
+                "1854e38306bb3f47",
+                "6e9bb9f61930439a"
+            ]
+        ]
+    },
+    {
+        "id": "6e9bb9f61930439a",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "f00529e4fb81c9bc",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "d0733766444257d1",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "1fb68403c50ba681",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubTorneiosREAD",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1600,
+        "wires": [
+            [
+                "04e26a1217581efd"
+            ]
+        ]
+    },
+    {
+        "id": "04e26a1217581efd",
+        "type": "cloudantplus in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubtorneiosdb",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 500,
+        "y": 1600,
+        "wires": [
+            [
+                "f00529e4fb81c9bc",
+                "d0733766444257d1"
+            ]
+        ]
+    },
+    {
+        "id": "d77ed6441fa09906",
+        "type": "http response",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "169c9cb3ef635740",
+        "type": "cloudantplus out",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "cloudant": "df4df77e90cd73bf",
+        "database": "esporthubtorneiosdb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 500,
+        "y": 1720,
+        "wires": [
+            [
+                "d77ed6441fa09906",
+                "4784febc329aae5f"
+            ]
+        ]
+    },
+    {
+        "id": "4784febc329aae5f",
+        "type": "debug",
+        "z": "442f68ed1ee7d405",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "1d9e1ce2a4dfe5d0",
+        "type": "http in",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "url": "/eSportHubTorneiosDELETE",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 1720,
+        "wires": [
+            [
+                "169c9cb3ef635740"
+            ]
+        ]
+    },
+    {
+        "id": "fdd0afd85703dabc",
+        "type": "split",
+        "z": "442f68ed1ee7d405",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 330,
+        "y": 1480,
+        "wires": [
+            [
+                "cc7d6c7b0a79f14f"
+            ]
+        ]
+    },
+    {
+        "id": "df4df77e90cd73bf",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-10jxylvs36u46ldr6za4p2sero86jnboc26asrbk2q0g:0f284505f2f612099b7186f933976498@8472bb0f-4f34-4675-bd25-3cf7a52343d1-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    }
+]

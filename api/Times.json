@@ -1,0 +1,43 @@
+[
+    {
+        "id" : 21,
+        "nomeTime" : "Faze Clan",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156271630809579640/image.png?ex=65145d5f&is=65130bdf&hm=3c10cd7e99d34655061b9e7fe26172eb2bb47e75b8efec4e76ccafab6a4f7c12&"
+    },
+    {"id": 22,
+        "nomeTime": "Cloud9",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156274019159519284/cloud9.png?ex=65145f98&is=65130e18&hm=ab67fe12e212d1e1f4bfdff50c38b0a491561e18777389d3cdb1cffcdd02161b&"
+    },
+    {"id": 23,
+        "nomeTime" : "Team Vitality",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156274019453116527/team-vitality.png?ex=65145f98&is=65130e18&hm=01957fd3a8071fc1fe929d0a4d3da51398b952669a8713c56bf47e5ede9fb548&"
+    },
+    {"id": 24,
+        "nomeTime" : "Astralis",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156274378116448346/astralis.png?ex=65145fee&is=65130e6e&hm=a3bcd9a4efbbc2d0d1be7db995a4b2f6dae793045a807ef22b1f8e711b417b2d&"
+    },
+    {"id": 25,
+        "nomeTime" : "FURIA Esports",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156274764646715402/furia.png?ex=6514604a&is=65130eca&hm=03ee39b1be6e261c8ee276f6f83a087232e4b83ccafb1221166a3d8957def6bc&"
+    },
+    {"id": 26,
+        "nomeTime" : "Fnatic",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156275177735340102/fnatic.png?ex=651460ac&is=65130f2c&hm=8c43721e00c6a7d1a78eb0d09bc4bcbfccbb6c08673801a3570f1c911155c694&"
+    },
+    {"id": 27,
+        "nomeTime" : "Evil Geniuses",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156275514651197551/evil-geniuses.png?ex=651460fd&is=65130f7d&hm=84210bb67942f23b6d44ce0bb3efc8bca1d133f7ee1d27732d7c8980e7e38c55&"
+    },
+    {"id": 28,
+        "nomeTime" : "OpTic Gaming",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156275933175623680/optic-gaming.png?ex=65146161&is=65130fe1&hm=10657a9249e4319b51c4dc037c60d588c1e01e4fac890525e266c522ffa56801&"
+    },
+    {"id": 29,
+        "nomeTime" : "Team Liquid",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156276308695863397/team-liquid.png?ex=651461ba&is=6513103a&hm=99eeee473b38a8e19919de6feff32b028b8085600f27467dbd6cb8e09ac9422c&"
+    },
+    {"id": 30,
+        "nomeTime" : "NRG",
+        "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156276308385468456/nrg.png?ex=651461ba&is=6513103a&hm=a0967740c84d6d174c056c4f47569c16450acaa75a66f9c7884b18697fa93a7a&"
+    }
+]
