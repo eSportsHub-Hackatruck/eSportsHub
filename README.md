@@ -10,15 +10,20 @@ Esse projeto foi feito no [Projeto Hackatruck](https://hackatruck.com.br), nos f
 Nosso protótipo inicial constituia em 5 telas:
 
 - 🏠 Home
+  
 Nossa HomePage conteria as informações sobre os próximos jogos, contendo o horário do jogo, dia, liga e os times que se enfrentariam.
 - 🕹 Games
+  
 Nessa pagina contem os jogos que são contemplados no nosso app.
-- 👤 Players 
+- 👤 Players
+  
 Nessa pagina contem os players dos times, nela contem informações detalhadas sobre os players, como nome, idade, etc.
 
 - 👥 Teams
+  
 Nessa pagina contém os times, nela contém informações detalhadas sobre os times, em quais campeonatos eles participam e os players dessa equipe.
 -  🏆 Leagues
+  
 Nessa pagina contém os campeonatos, nela contém informações detalhadas sobre os campeonatos, ondem ocorrem, quais os times participatem e as premiações.
 
  ### Esse é o protótipo final feito:
