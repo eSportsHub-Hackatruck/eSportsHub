@@ -10,20 +10,15 @@ Esse projeto foi feito no [Projeto Hackatruck](https://hackatruck.com.br), nos f
 Nosso protótipo inicial constituia em 5 telas:
 
 - 🏠 Home
-  
 Nossa HomePage conteria as informações sobre os próximos jogos, contendo o horário do jogo, dia, liga e os times que se enfrentariam.
 - 🕹 Games
-  
 Nessa pagina contem os jogos que são contemplados no nosso app.
-- 👤 Players
-  
+- 👤 Players 
 Nessa pagina contem os players dos times, nela contem informações detalhadas sobre os players, como nome, idade, etc.
 
 - 👥 Teams
-  
 Nessa pagina contém os times, nela contém informações detalhadas sobre os times, em quais campeonatos eles participam e os players dessa equipe.
 -  🏆 Leagues
-  
 Nessa pagina contém os campeonatos, nela contém informações detalhadas sobre os campeonatos, ondem ocorrem, quais os times participatem e as premiações.
 
  ### Esse é o protótipo final feito:
@@ -158,10 +153,21 @@ Um exemplo do uso dessa API é a seguinte:
 Nosso trabalho em equipe foi fundamental para a realização desse projeto, quero destacar o comprometimento de todos em tornar o app algo unico e divertido.
 
 Agradeço a nossa equipe:
-- [André Veras Fernandes](https://www.linkedin.com/in/andre-veras-fernandes/)
-- [João Vitor Teixeira Lechinovski](https://www.linkedin.com/in/joãolechinovski/)
-- [Juan Augusto Dias Santos](https://www.linkedin.com/in/juan-santos-28a001288/)
-- [Kauan Feitoza Mendes](https://www.linkedin.com/in/kauanfm123/)
+- André Veras Fernandes
+  
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andre-veras-fernandes/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/AndreVerasFernandes)
 
-
+- João Vitor Teixeira Lechinovski
+  
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joãolechinovski/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Lechinovski)
+- Juan Augusto Dias Santos
+  
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juan-santos-28a001288/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/JuanSantos64)
+- Kauan Feitoza Mendes
+  
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kauanfm123/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/KauanFM)
 
