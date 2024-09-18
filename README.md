@@ -61,7 +61,7 @@ Contém a foto do time que os jogadores jogam
 Um exemplo do uso dessa API é a seguinte:
 
 ```bash
-{
+    {
         "id": 1,
         "nickJogador": "s1mple",
         "nameJogador": "Oleksandr Kostyliev",
@@ -90,7 +90,7 @@ Contém uma foto dos jogos
 
 Um exemplo do uso dessa API é a seguinte: 
 ```bash
-{
+    {
         "id": "11",
         "nameJogos": "PUBG",
         "desenvolvedoraJogos": "Player Unknown",
@@ -112,7 +112,8 @@ Contém a foto dos times
 Um exemplo do uso dessa API é a seguinte: 
 
 ```bash
-"id" : 21,
+    {
+        "id" : 21,
         "nomeTime" : "Faze Clan",
         "photoTime" : "https://cdn.discordapp.com/attachments/1152325417483649078/1156271630809579640/image.png?ex=65145d5f&is=65130bdf&hm=3c10cd7e99d34655061b9e7fe26172eb2bb47e75b8efec4e76ccafab6a4f7c12&"
     }
@@ -135,7 +136,7 @@ Contém o logo do jogo que pertence aos Torneios
 Um exemplo do uso dessa API é a seguinte: 
 
 ```bash
-{
+    {
         "id" : "42",
         "nomeCampeonato" : "CCT South America Series",
         "imagemCampeonato" : "https://liquipedia.net/commons/images/thumb/5/52/CCT_South_America_full_allmode.png/600px-CCT_South_America_full_allmode.png",
